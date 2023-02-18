@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes on Xinxia Dong(董新夏)</title>
+    <link>https://dxxcomm.github.io/categories/shortcodes/</link>
+    <description>Recent content in shortcodes on Xinxia Dong(董新夏)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Aug 2020 16:01:23 +0800</lastBuildDate><atom:link href="https://dxxcomm.github.io/categories/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>https://dxxcomm.github.io/about/</link>
+      <pubDate>Sun, 30 Aug 2020 16:01:23 +0800</pubDate>
+      
+      <guid>https://dxxcomm.github.io/about/</guid>
+      <description>My name is Xinxia Dong (董新夏), I am currently a Ph.D. student in Communication at the University at Buffalo, the State University of New York. I earned my master&amp;rsquo;s degree in Communication from Renmin University of China.</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>https://dxxcomm.github.io/resume/cv/</link>
+      <pubDate>Sun, 30 Aug 2020 16:01:23 +0800</pubDate>
+      
+      <guid>https://dxxcomm.github.io/resume/cv/</guid>
+      <description>My name is Xinxia Dong (董新夏), I am currently a Ph.D. student in Communication at the University at Buffalo, the State University of New York. I earned my master&amp;rsquo;s degree in Communication from Renmin University of China.</description>
+    </item>
+    
+  </channel>
+</rss>
