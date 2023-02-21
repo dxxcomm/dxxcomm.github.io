@@ -1,4 +1,4 @@
-a.btn{
+li.btn{
   text-decoration: none;
   text-align: center;
   background-color: rgb(0 0 0 / 95%);
@@ -23,6 +23,6 @@ a.btn{
   font-stretch: normal;
 }
 
-a.btn:hover {
+li.btn:hover {
   background: #FF4D4D;
 }
