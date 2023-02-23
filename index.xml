@@ -6,7 +6,7 @@
     <description>Recent content on Xinxia Dong(董新夏)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Apr 2021 23:39:49 +0530</lastBuildDate><atom:link href="https://dxxcomm.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Feb 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://dxxcomm.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theme Documentation - Basics</title>
       <link>https://dxxcomm.github.io/posts/theme-documentation-basics/</link>
@@ -51,6 +51,15 @@ The emojify function can be called directly in templates or Inline Shortcodes.
 To enable emoji globally, set enableEmoji to true in your site configuration and then you can type emoji shorthand codes directly in content files.
 These begin and end with a colon and include the code of an emoji:
 Gone camping! {?:}tent: Be back soon.  That is so funny!</description>
+    </item>
+    
+    <item>
+      <title>CONTACT</title>
+      <link>https://dxxcomm.github.io/contact/contact/</link>
+      <pubDate>Tue, 21 Feb 2023 16:01:23 +0800</pubDate>
+      
+      <guid>https://dxxcomm.github.io/contact/contact/</guid>
+      <description>Look forward to hearing from you!Name*:Email*:Tel*:Message*:Submit@import &#34;mystyle.css&#34;</description>
     </item>
     
     <item>
