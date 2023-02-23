@@ -68,15 +68,16 @@ Gone camping! {?:}tent: Be back soon.  That is so funny!</description>
       <pubDate>Tue, 21 Feb 2023 16:01:23 +0800</pubDate>
       
       <guid>https://dxxcomm.github.io/cv/</guid>
-      <description>a{text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}a:active{color:#2471a3;text-decoration: none;}p{line-height: 15%}Xinxia Dong (董新夏)
+      <description>a{text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}a:active{color:#2471a3;text-decoration: none;}p{line-height: 15%}Xinxia Dong (董新夏)
  Xinxia Dong (董新夏)
 Ph.D. Student
 Department of Communication
 University at Buffalo, SUNY (UB)
 Davis Hall, Buffalo, New York, U.S.A
 Eamil:dxxcomm@gmail.com
- CURRICULUM VITAE
-@import &#34;btn.css&#34;Download CV</description>
+CURRICULUM VITAE
+#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}EDUCATION
+University at Buffalo, the State University of New York</description>
     </item>
     
     <item>
