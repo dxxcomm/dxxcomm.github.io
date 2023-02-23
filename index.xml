@@ -92,7 +92,7 @@ Department of Communication
 University at Buffalo, SUNY (UB)
 Davis Hall, Buffalo, New York, U.S.A
 Eamil:dxxcomm@gmail.com
-My name is Xinxia Dong (董新夏), I am currently a Ph.D. student in Communication at the University at Buffalo, the State University of New York. I earned my master&#39;s degree in Communication from Renmin University of China.</description>
+#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}a:hover{color:#FF4D4D;text-decoration: none;}My name is Xinxia Dong (董新夏), I am currently a Ph.D. student (2020-Present) in Communication at the University at Buffalo, the State University of New York</description>
     </item>
     
     <item>
