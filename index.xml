@@ -131,7 +131,8 @@ Eamil:dxxcomm@gmail.com
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dxxcomm.github.io/publications/</guid>
-      <description>Yang, J. Z., Dong, X., &amp;amp; Liu, Z. (2022). Systematic processing of COVID-19 information: Relevant channel beliefs and perceived information gathering capacity as moderators. Science Communication, 44(1), 60–85.</description>
+      <description>#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}a{text-decoration: none;a:hover{color:#FF4D4D;text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}Yang, J. Z., Dong, X., &amp; Liu, Z. (2022). Systematic processing of COVID-19 information: Relevant channel beliefs and perceived information gathering capacity as moderators.
+Science Communication, 44(1), 60–85.</description>
     </item>
     
     <item>
