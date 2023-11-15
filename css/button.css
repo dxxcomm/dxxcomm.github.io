@@ -1,10 +1,10 @@
 a.btn{
   text-decoration: none;
   text-align: center;
-  background-color: rgb(137 120 124 / 95%);
+  background-color: rgb(128 137 122 / 95%);
   border-radius: 6px;
   -webkit-border-radius: 10px;
-  color: #A47B75;
+  color: black;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 1px;
@@ -24,5 +24,5 @@ a.btn{
 }
 
 a.btn:hover {
-  background: #0A1053;
+  background: #A77979;
 }
