@@ -2,7 +2,7 @@
   --content-width: 1120px;
   --container-width: 810px;
 
-  --light-primary-color: 228, 206, 206;
+  --light-primary-color: 227 140 122;
   --light-secondary-color: #dddddd;
   --light-tertiary-color: #272822;
   --light-text-color: black;
@@ -143,7 +143,7 @@ img {
 }
 
 .header-nav .avatar {
-  border-radius: 18px;
+  border-radius: 15px;
   float: left;
   height: 100%;
   margin-left: 15px;
@@ -173,6 +173,7 @@ img {
 .nav-links .nav-link {
   display: inline-block;
   padding: 0 2px;
+  font-size: 18px;
 }
 .nav-links .nav-link a {
   display: block;
