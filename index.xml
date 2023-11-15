@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Xinxia Dong(董新夏)</title>
+    <title>Xinxia Dong, Ph.D.(董新夏)</title>
     <link>https://dxxcomm.github.io/</link>
-    <description>Recent content on Xinxia Dong(董新夏)</description>
+    <description>Recent content on Xinxia Dong, Ph.D.(董新夏)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 21 Feb 2023 16:01:23 +0800</lastBuildDate><atom:link href="https://dxxcomm.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -63,21 +63,12 @@ Gone camping! {?:}tent: Be back soon.  That is so funny!</description>
     </item>
     
     <item>
-      <title>CV</title>
-      <link>https://dxxcomm.github.io/cv/</link>
+      <title>News &amp; Events</title>
+      <link>https://dxxcomm.github.io/newsevents/</link>
       <pubDate>Tue, 21 Feb 2023 16:01:23 +0800</pubDate>
       
-      <guid>https://dxxcomm.github.io/cv/</guid>
-      <description>a{text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}a:active{color:#2471a3;text-decoration: none;}p{line-height: 15%}Xinxia Dong (董新夏)
- Xinxia Dong (董新夏)
-Ph.D. Student
-Department of Communication
-University at Buffalo, SUNY (UB)
-Davis Hall, Buffalo, New York, U.S.A
-Eamil:dxxcomm@gmail.com
-CURRICULUM VITAE
-#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}EDUCATION
-University at Buffalo, the State University of New York</description>
+      <guid>https://dxxcomm.github.io/newsevents/</guid>
+      <description>#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}a{text-decoration: none;a:hover{color:#FF4D4D;text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}news list.news-list {list-style-type: none;padding: 0;}.news-item {margin-bottom: 20px;}.news-title {font-weight: bold;}.news-description {font-style: italic;}.news-time {color: grey;font-size: small;}Latest NewsCongratulation!My paper &#34;Platform Affordances, Discursive Opportunities,ancSociaMedia Activism: A Cross-PlatformAnalysis of #MeToo on Twitter, Facebook, andReddit.</description>
     </item>
     
     <item>
@@ -97,12 +88,21 @@ Eamil:dxxcomm@gmail.com
       <guid>https://dxxcomm.github.io/about/</guid>
       <description>a{text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}a:active{color:#2471a3;text-decoration: none;}p{line-height: 15%}Xinxia Dong (董新夏)
  Xinxia Dong (董新夏)
-Ph.D. Student
+Ph.D. Candidate
 Department of Communication
 University at Buffalo, SUNY (UB)
 Davis Hall, Buffalo, New York, U.S.A
 Eamil:dxxcomm@gmail.com
 #wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}a:hover{color:#FF4D4D;text-decoration: none;}My name is Xinxia Dong (董新夏), I am currently a Ph.D. student (2020-Present) in Communication at the University at Buffalo, the State University of New York</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://dxxcomm.github.io/teaching/</link>
+      <pubDate>Sun, 30 Aug 2020 16:01:23 +0800</pubDate>
+      
+      <guid>https://dxxcomm.github.io/teaching/</guid>
+      <description>.container {display: flex;}.column {padding: 10px; /* 列与列之间的间距 */word-wrap: break-word; /* 文字过长时自动换行 */}.column1 {flex: 1; /* 第一列宽度是第二列的两倍 */}.column2 {flex:1.5; /* 第二列宽度是第一列的一半 */}University of BuffaloSchool of CommunicationCOM337 Communication Theory (2023 Spring &amp; Fall)</description>
     </item>
     
     <item>
@@ -136,23 +136,12 @@ Eamil:dxxcomm@gmail.com
     </item>
     
     <item>
-      <title>Publications</title>
-      <link>https://dxxcomm.github.io/publications/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dxxcomm.github.io/publications/</guid>
-      <description>#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}a{text-decoration: none;a:hover{color:#FF4D4D;text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}Yang, J. Z. &amp; Dong, X. (2023). Monkeypox outbreak: Psychological distance, risk perception, and support for risk mitigation. Journal of health Psychology.https://doi.org/10.1177/13591053231180457.
-Dong, X. &amp; Yang, J. Z. (2023). PFAS Contamination: Pathway from communication to behavioral outcomes. Journal of Health Communication. Advanced online publication.https://doi.org/10.1080/10810730.2023.2193144.
-Suk, J., Zhang, Y.</description>
-    </item>
-    
-    <item>
-      <title>Researches</title>
+      <title>Reasearch</title>
       <link>https://dxxcomm.github.io/researches/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dxxcomm.github.io/researches/</guid>
-      <description> Xinxia Dong (董新夏) </description>
+      <description>#wrap{width: 100%; //设置宽度overflow: hidden; //超出隐藏white-space: normaL; //设置文字换行text-overflow: ellipsis;//超出显示...}a{text-decoration: none;a:hover{color:#FF4D4D;text-decoration: none;}a:hover{color:#FF4D4D;text-decoration: none;}Our group will focus on the following topics: Communicating science: Communication science is the study of how people share information and interact with each other using different methods like speaking, writing, or using technology. Health risk: Research in health risk explores the factors that could potentially cause harm to people&#39;s physical or mental well-being.</description>
     </item>
     
     <item>
