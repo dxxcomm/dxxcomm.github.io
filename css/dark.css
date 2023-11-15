@@ -1,8 +1,8 @@
 :root {
-  --dark-primary-color: 128, 42, 42;
+  --dark-primary-color:177, 136, 106;
   --dark-secondary-color: #2d333b;
   --dark-tertiary-color: #646464;
-  --dark-text-color: white;
+  --dark-text-color: 10,16,83;
 }
 
 html {
