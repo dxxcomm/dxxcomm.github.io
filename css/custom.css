@@ -1,0 +1,7 @@
+body {
+    background-image: url('/images/SHU.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
+}

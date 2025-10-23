@@ -175,82 +175,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xinxia Dong - Profile</title>
     <style>
-        /* 基础样式 */
-        .profile-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 30px;
-            max-width: 100%;
+        /* 基础样式和重置 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            /* 修改背景为透明 */
+            background-color: transparent;
             padding: 20px;
         }
         
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        
+        /* 主容器 - 使用Flexbox实现响应式布局 */
+        .profile-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            /* 修改背景为透明 */
+            background: transparent;
+            border-radius: 8px;
+            /* 移除阴影 */
+            box-shadow: none;
+        }
+        
+        /* 图片区域 */
         .image-section {
-            flex: 0 0 auto;
+            flex: 0 0 300px;
             text-align: center;
         }
         
         .profile-image {
-            max-width: 100%;
+            width: 100%;
+            max-width: 300px;
             height: auto;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
+        /* 信息区域 */
         .info-section {
-            flex: 1 1 300px;
+            flex: 1;
             min-width: 0; /* 防止内容溢出 */
-            text-align: center;
         }
         
         .name-title {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .name-title h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .name-title h2 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            font-weight: normal;
         }
         
         .institution-link {
-            display: block;
-            margin: 10px 0;
+            margin: 15px 0;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin: 15px 0;
+            font-size: 1.1rem;
+            text-align: left;
         }
         
         /* 链接样式 */
         a {
-            text-decoration: none;
             color: #2471a3;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
         
         a:hover {
             color: #FF4D4D;
+            text-decoration: underline;
         }
         
         a:active {
             color: #2471a3;
         }
         
-        p {
-            line-height: 1.4;
-            margin: 12px 0;
-        }
-        
-        /* 移动端适配 */
-        @media (max-width: 768px) {
+        /* 平板设备适配 (768px - 1024px) */
+        @media screen and (max-width: 1024px) {
             .profile-container {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                padding: 15px;
+                gap: 30px;
+                padding: 25px;
             }
             
             .image-section {
-                margin-bottom: 10px;
+                flex: 0 0 250px;
+            }
+            
+            .name-title h1 {
+                font-size: 2rem;
+            }
+            
+            .name-title h2 {
+                font-size: 1.3rem;
+            }
+        }
+        
+        /* 移动端适配 (小于768px) - 切换为上下布局 */
+        @media screen and (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+                padding: 20px;
+            }
+            
+            .image-section {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 280px;
             }
             
             .profile-image {
-                max-width: 200px;
+                max-width: 280px;
             }
             
             .info-section {
-                flex: 1 1 auto;
                 width: 100%;
+                text-align: center;
+            }
+            
+            .name-title {
+                text-align: center;
+                margin-bottom: 20px;
             }
             
             .name-title h1 {
@@ -258,23 +334,36 @@
             }
             
             .name-title h2 {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             
-            .institution-link {
-                margin: 8px 0;
+            p {
+                text-align: center;
+                margin: 12px 0;
             }
         }
         
-        /* 小屏幕手机优化 */
-        @media (max-width: 480px) {
-            .profile-container {
+        /* 小屏幕手机优化 (小于480px) */
+        @media screen and (max-width: 480px) {
+            body {
                 padding: 10px;
-                gap: 15px;
+            }
+            
+            .profile-container {
+                padding: 15px;
+                gap: 20px;
+            }
+            
+            .image-section {
+                max-width: 240px;
+            }
+            
+            .profile-image {
+                max-width: 240px;
             }
             
             .name-title h1 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
             
             .name-title h2 {
@@ -282,8 +371,21 @@
             }
             
             p {
-                font-size: 0.9rem;
-                margin: 8px 0;
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+        }
+        
+        /* 打印样式 */
+        @media print {
+            .profile-container {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            a {
+                color: #000;
+                text-decoration: underline;
             }
         }
     </style>
@@ -292,25 +394,21 @@
     <hr>
     <div class="profile-container">
         <div class="image-section">
-            <img src="https://github.com/dxxcomm/mackdownPic/raw/master/images/xiaxia.jpg" 
+                    <img src="https://github.com/dxxcomm/mackdownPic/raw/master/images/xiaxia.jpg" 
                  alt="Xinxia Dong" 
-                 class="profile-image">
-        </div>
-        
+                 class="profile-image">        
+        </div>       
         <div class="info-section">
             <div class="name-title">
                 <h1>Xinxia Dong (董新夏)</h1>
                 <h2>Assistant Professor</h2>
             </div>
-            
             <p class="institution-link">
-                <a href="https://sjc.shu.edu.cn/">SCHOOL OF JOURNALIST & COMMUNICATION</a>
+                <a href="链接1">SCHOOL OF JOURNALIST & COMMUNICATION</a>
             </p>
-            
             <p class="institution-link">
-                <a href="https://www.shu.edu.cn/">SHANGHAI UNIVERSITY, SHU</a>
-            </p>
-            
+                <a href="链接2">SHANGHAI UNIVERSITY, SHU</a>
+            </p>           
             <p>Shangda Road, Baoshan District, Shanghai, China</p>
             <p>Email: <a href="mailto:dxxcomm@gmail.com">dxxcomm@gmail.com</a></p>
         </div>
@@ -335,71 +433,199 @@
 	My name is <b>Xinxia Dong (董新夏)</b>, I am currently an  <b> Assistant Professor </b> (2024-Present) in SCHOOL OF JOURNALIST & COMMUNICATION at <p style="display:inline;color:#2471a3"><a href="https://sjc.shu.edu.cn/">SHANGHAI UNIVERSITY</a></p>. My research focus on the communication, health and environmental risk. <br>Before I join in Shanghai University, I earned my master's degree in Communication from <p style="display:inline;color:#2471a3"><a href="https://www.ruc.edu.cn/en">Renmin University of China</a></p>, where I was advisied by <p style="display:inline;color:#2471a3"><a href="http://jcr.ruc.edu.cn/English/FacultyandStaff/186f301eec714638b4081c0d2580513c.htm">Prof. Di Zhang</a></p>. After that, I went to U.S. and earned my PhD degree at <p style="display:inline;color:#2471a3"><a href="https://www.buffalo.edu/">University at Buffalo, the State University of New York</a></p>, under the supervision of <p style="display:inline;color:#2471a3"><a href="https://www.buffalo.edu/cas/communication/faculty/yang.html">Prof. Janet Yang</a></p>.<br>Currently, I earn the The National Social Science Fund of China(2025), and am looking for undergraduate and graduate students who have interest in the AI application in Communication. The basic programming skills and good writting ability in Chinese and English are required.</div>
 <hr>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  .container {
-    display: flex;
-  }
-
-  .column {
-    padding: 10px;      /* 列与列之间的间距 */
-    word-wrap: break-word; /* 文字过长时自动换行 */
-  }
-
-  .column1 {
-    flex: 1;            /* 第一列宽度是第二列的两倍 */
-  }
-
-  .column2 {
-    flex:2;            /* 第二列宽度是第一列的一半 */
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Profile - Xinxia Dong</title>
+    <style>
+        /* 基础样式 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* 设置透明背景 */
+            background-color: transparent;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 20px;
+            /* 设置透明背景 */
+            background-color: transparent;
+        }
+        
+        /* 去掉最后一个容器的分割线 */
+        .container:last-child {
+            border-bottom: none;
+        }
+        
+        .column {
+            padding: 15px;
+            word-wrap: break-word;
+        }
+        
+        .column1 {
+            flex: 1;
+            min-width: 250px;
+            font-weight: bold;
+            /* 设置透明背景 */
+            background-color: transparent;
+        }
+        
+        .column2 {
+            flex: 2;
+            min-width: 300px;
+            /* 电脑端：第二列文字两端对齐 */
+            text-align: justify;
+            /* 设置透明背景 */
+            background-color: transparent;
+        }
+        
+        .section-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            /* 设置透明背景 */
+            background-color: transparent;
+        }
+        
+        .content-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            /* 设置透明背景 */
+            background-color: transparent;
+        }
+        
+        a {
+            color: #2471a3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            color: #FF4D4D;
+            text-decoration: underline;
+        }
+        
+        /* 移动端适配 */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .column1, .column2 {
+                flex: 1 1 100%;
+                min-width: auto;
+                padding: 10px 5px;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+                text-align: center; /* 手机端：标题居中 */
+                /* 设置半透明背景，提高可读性 */
+                background-color: rgba(248, 249, 250, 0.3);
+                padding: 8px;
+                border-radius: 4px;
+                margin-bottom: 15px;
+            }
+            
+            .content-text {
+                font-size: 0.95rem;
+                text-align: justify; /* 手机端：内容两端对齐 */
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+        
+        /* 小屏幕手机优化 */
+        @media screen and (max-width: 480px) {
+            .section-title {
+                font-size: 1.1rem;
+            }
+            
+            .content-text {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            
+            .column {
+                padding: 8px 3px;
+            }
+        }
+        
+        /* 打印样式 */
+        @media print {
+            .container {
+                break-inside: avoid;
+                border-bottom: 1px solid #ccc;
+            }
+            
+            .container:last-child {
+                border-bottom: 1px solid #ccc;
+            }
+            
+            a {
+                color: #000;
+                text-decoration: underline;
+            }
+        }
+    </style>
 </head>
 <body>
-     
-<div class="container">
-  <div class="column column1">
-     <font size="5"><b>Eaducation</b></font>
-
-  </div>
-  <div class="column column2">
-    <font size="3.7"><b>Ph.D</b>, Communication, <p style="display:inline;color:#2471a3"><a href="https://www.buffalo.edu/">University at Buffalo, the State University of New York</a></p>, U.S, 2024.<br>
-    <b>M.A.</b>, Communication, <p style="display:inline;color:#2471a3"><a href="https://www.ruc.edu.cn/">The Renmin University of China</a></p>, 2020.<br>
-    <b>B.A.</b>, Communication, <p style="display:inline;color:#2471a3"><a href="https://www.njnu.edu.cn/">Nanjing Normal University</a></p>, China, 2018.</font>  
-  </div>
-</div>
-<div class="container">
-  <div class="column column1">
-     <font size="5"><b>Research Experience</b></font>
-
-  </div>
-  <div class="column column2">
-    <font size="3.8">The communication analysis of health risk, including the <b>COVID-19, Monkeypox</b>.<br>
-    	The communication analysis of information grasp gap, including the <b>Vaccination, Election</b>.<br>
-         The communication analysis of environmental risk.<br>
-    </font>
-  </div>
-</div>
-<div class="container">
-  <div class="column column1">
-     <font size="5"><b>Hornors and Awards</b></font>
-
-  </div>
-  <div class="column column2">
-    <font size="3.8">Full <b>President scholarship</b> for the School of Communication at UB, U.S., 2020-2024.<br>
-         <b>1st Place </b>in the competion of internship at <b>Olympic Winter Games Beijing 2022</b>.<br>
-         Full scholarship for the exchange program at Pennsylvania State University, U.S., 2015.<br>
-    </font>
-  </div>
-</div>
+    <div class="container">
+        <div class="column column1">
+            <div class="section-title">Education</div>
+        </div>
+        <div class="column column2">
+            <div class="content-text">
+                <strong>Ph.D</strong>, Communication, <a href="https://www.buffalo.edu/">University at Buffalo, the State University of New York</a>, U.S, 2024.<br>
+                <strong>M.A.</strong>, Communication, <a href="https://www.ruc.edu.cn/">The Renmin University of China</a>, 2020.<br>
+                <strong>B.A.</strong>, Communication, <a href="https://www.njnu.edu.cn/">Nanjing Normal University</a>, China, 2018.
+            </div>
+        </div>
+    </div>
+    <hr>  
+    <div class="container">
+        <div class="column column1">
+            <div class="section-title">Research Experience</div>
+        </div>
+        <div class="column column2">
+            <div class="content-text">
+                The communication analysis of health risk, including the <strong>COVID-19, Monkeypox</strong>.<br>
+                The communication analysis of information grasp gap, including the <strong>Vaccination, Election</strong>.<br>
+                The communication analysis of environmental risk.
+            </div>
+        </div>
+    </div>
+    <hr>   
+    <div class="container">
+        <div class="column column1">
+            <div class="section-title">Honors and Awards</div>
+        </div>
+        <div class="column column2">
+            <div class="content-text">
+                Full <strong>President scholarship</strong> for the School of Communication at UB, U.S., 2020-2024.<br>
+                <strong>1st Place</strong> in the competition of internship at <strong>Olympic Winter Games Beijing 2022</strong>.<br>
+                Full scholarship for the exchange program at Pennsylvania State University, U.S., 2015.
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-<hr>
-
-
-
-
         </p>
     </div>
         <ul class="post-tags">
