@@ -168,34 +168,157 @@
     </div>
     <div class="post-content">
         <p>
-            <hr>
-<div>
-	<div style="float:leftwidth:200pxheight:100px">
-		<img src="https://github.com/dxxcomm/mackdownPic/raw/master/images/xiaxia.jpg" width = "330"  alt="效果图"align=left />
-	</div>
-	<div style="float:leftwidth:300pxheight:500pxmargin-left:30pxmargin-top:100pxmargin-right:30">
-			<style>
-				a{text-decoration: none;
-
-				}
-
-				a:hover{color:#FF4D4D;text-decoration: none;}
-				a:active{color:#2471a3;text-decoration: none;}
-				p{line-height: 15%}
- 		</style>
-		<br>
-        <p align=center style=opacity:0;><font size=5> Xinxia Dong (董新夏)</font></p><br>
-		<p align=center><font size=6.8><b>   Xinxia Dong (董新夏)</b></font></p><br>
-		<p align=center><font size=5><b>Assistant Professor</b></font></p><br>
-		<p style=color:#2471a3 align=center><font size=4.98><a href="https://sjc.shu.edu.cn/">SCHOOL OF JOURNALIST & COMMUNICATION</a></font></p><br>
-		<p style=color:#2471a3 align=center><font size=4.98><a href="https://www.shu.edu.cn/">SHANGHAI UNIVERSITY, SHU</a></font></p><br>
-		<p align=center><font size=4.98>Shangda Road, Baoshan District, Shanghai, China</font></p><br><p align=center><font size=4.98>Eamil:<a href="mailto:dxxcomm@gmail.com" style=color:#2471a3>dxxcomm@gmail.com</a></font></p>
-	</div>
-</div>
-<br>
-<br>
-<br>
-<hr>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xinxia Dong - Profile</title>
+    <style>
+        /* 基础样式 */
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            max-width: 100%;
+            padding: 20px;
+        }
+        
+        .image-section {
+            flex: 0 0 auto;
+            text-align: center;
+        }
+        
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .info-section {
+            flex: 1 1 300px;
+            min-width: 0; /* 防止内容溢出 */
+            text-align: center;
+        }
+        
+        .name-title {
+            margin-bottom: 20px;
+        }
+        
+        .institution-link {
+            display: block;
+            margin: 10px 0;
+        }
+        
+        /* 链接样式 */
+        a {
+            text-decoration: none;
+            color: #2471a3;
+        }
+        
+        a:hover {
+            color: #FF4D4D;
+        }
+        
+        a:active {
+            color: #2471a3;
+        }
+        
+        p {
+            line-height: 1.4;
+            margin: 12px 0;
+        }
+        
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 15px;
+            }
+            
+            .image-section {
+                margin-bottom: 10px;
+            }
+            
+            .profile-image {
+                max-width: 200px;
+            }
+            
+            .info-section {
+                flex: 1 1 auto;
+                width: 100%;
+            }
+            
+            .name-title h1 {
+                font-size: 1.8rem;
+            }
+            
+            .name-title h2 {
+                font-size: 1.3rem;
+            }
+            
+            .institution-link {
+                margin: 8px 0;
+            }
+        }
+        
+        /* 小屏幕手机优化 */
+        @media (max-width: 480px) {
+            .profile-container {
+                padding: 10px;
+                gap: 15px;
+            }
+            
+            .name-title h1 {
+                font-size: 1.5rem;
+            }
+            
+            .name-title h2 {
+                font-size: 1.1rem;
+            }
+            
+            p {
+                font-size: 0.9rem;
+                margin: 8px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <div class="profile-container">
+        <div class="image-section">
+            <img src="https://github.com/dxxcomm/mackdownPic/raw/master/images/xiaxia.jpg" 
+                 alt="Xinxia Dong" 
+                 class="profile-image">
+        </div>
+        
+        <div class="info-section">
+            <div class="name-title">
+                <h1>Xinxia Dong (董新夏)</h1>
+                <h2>Assistant Professor</h2>
+            </div>
+            
+            <p class="institution-link">
+                <a href="https://sjc.shu.edu.cn/">SCHOOL OF JOURNALIST & COMMUNICATION</a>
+            </p>
+            
+            <p class="institution-link">
+                <a href="https://www.shu.edu.cn/">SHANGHAI UNIVERSITY, SHU</a>
+            </p>
+            
+            <p>Shangda Road, Baoshan District, Shanghai, China</p>
+            <p>Email: <a href="mailto:dxxcomm@gmail.com">dxxcomm@gmail.com</a></p>
+        </div>
+    </div>
+    <br>
+    <hr>
+</body>
+</html>
 
 <style type="text/css">
 			#wrap{
