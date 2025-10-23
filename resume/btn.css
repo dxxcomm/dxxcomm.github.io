@@ -1,0 +1,28 @@
+li.btn{
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(0 0 0 / 95%);
+  border-radius: 6px;
+  -webkit-border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  overflow: visible;
+  display:block;
+  width:220px;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  margin-top: 10px;
+  cursor: pointer;
+  height: auto;
+  font-family: opensans-bold, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+li.btn:hover {
+  background: #FF4D4D;
+}
