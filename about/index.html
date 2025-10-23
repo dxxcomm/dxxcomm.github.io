@@ -263,20 +263,23 @@
             text-align: left;
         }
         
-        /* 链接样式 */
-        a {
+        /* 链接样式 - 只在具体位置设置，不做全局约束 */
+        .institution-link a,
+        .email-link {
             color: #2471a3;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
         
-        a:hover {
+        .institution-link a:hover,
+        .email-link:hover {
             color: #FF4D4D;
             text-decoration: underline;
         }
         
-        a:active {
+        .institution-link a:active,
+        .email-link:active {
             color: #2471a3;
         }
         
@@ -383,7 +386,8 @@
                 border: 1px solid #ddd;
             }
             
-            a {
+            .institution-link a,
+            .email-link {
                 color: #000;
                 text-decoration: underline;
             }
@@ -394,36 +398,36 @@
     <hr>
     <div class="profile-container">
         <div class="image-section">
-                    <img src="https://github.com/dxxcomm/mackdownPic/raw/master/images/xiaxia.jpg" 
+            <img src="https://github.com/dxxcomm/mackdownPic/raw/master/images/xiaxia.jpg" 
                  alt="Xinxia Dong" 
-                 class="profile-image">        
+                 class="profile-image">
         </div>       
         <div class="info-section">
             <div class="name-title">
                 <h1>Xinxia Dong (董新夏)</h1>
                 <h2>Assistant Professor</h2>
-            </div>
+            </div>           
             <p class="institution-link">
-                <a href="链接1">SCHOOL OF JOURNALIST & COMMUNICATION</a>
-            </p>
+                <a href="https://sjc.shu.edu.cn/">SCHOOL OF JOURNALIST & COMMUNICATION</a>
+            </p>            
             <p class="institution-link">
-                <a href="链接2">SHANGHAI UNIVERSITY, SHU</a>
+                <a href="https://www.shu.edu.cn/">SHANGHAI UNIVERSITY, SHU</a>
             </p>           
             <p>Shangda Road, Baoshan District, Shanghai, China</p>
-            <p>Email: <a href="mailto:dxxcomm@gmail.com">dxxcomm@gmail.com</a></p>
+            <p>Email: <a href="mailto:dxxcomm@gmail.com" class="email-link">dxxcomm@gmail.com</a></p>
         </div>
     </div>
     <br>
     <hr>
 </body>
 </html>
-
 <style type="text/css">
 			#wrap{
 				width: 100%; //设置宽度
 				overflow: hidden; //超出隐藏
 				white-space: normaL; //设置文字换行
-				text-overflow: ellipsis;//超出显示...
+				text-overflow: ellipsis;//超出显示
+                font-family: Arial, sans-serif;
 			}
 		</style>
 <div id="wrap" style=text-align:justify; text-align-last:justify;>
@@ -508,15 +512,21 @@
             background-color: transparent;
         }
         
-        a {
+        /* 移除全局链接样式，改为在具体位置设置 */
+        .content-text a {
             color: #2471a3;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         
-        a:hover {
+        .content-text a:hover {
             color: #FF4D4D;
             text-decoration: underline;
+        }
+        
+        .content-text a:active {
+            color: #2471a3;
         }
         
         /* 移动端适配 */
@@ -578,7 +588,7 @@
                 border-bottom: 1px solid #ccc;
             }
             
-            a {
+            .content-text a {
                 color: #000;
                 text-decoration: underline;
             }
@@ -597,8 +607,7 @@
                 <strong>B.A.</strong>, Communication, <a href="https://www.njnu.edu.cn/">Nanjing Normal University</a>, China, 2018.
             </div>
         </div>
-    </div>
-    <hr>  
+    </div>   
     <div class="container">
         <div class="column column1">
             <div class="section-title">Research Experience</div>
@@ -610,8 +619,7 @@
                 The communication analysis of environmental risk.
             </div>
         </div>
-    </div>
-    <hr>   
+    </div>   
     <div class="container">
         <div class="column column1">
             <div class="section-title">Honors and Awards</div>
